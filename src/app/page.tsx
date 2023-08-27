@@ -1,18 +1,25 @@
 "use client";
-import AboutUs from "@/components/AboutUs";
+
 import HeroSection from "@/components/HeroSection";
-import ServicesSection from "@/components/ServicesSection";
-import React from "react";
+import Loader from "@/components/Loader";
+import Pills3D from "@/components/Pills3D";
+import { useState } from "react";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
   return (
-    <main className="flex min-h-screen flex-col justify-between p-6 pt-5">
-      <div className="flex flex-col items-start gap-8">
-        <HeroSection />
-        <div className="flex flex-col w-full gap-24">
-          <AboutUs />
-          <ServicesSection />
-        </div>
+    <main className="min-h-screen">
+      <div className="flex items-center flex-col justify-between p-6 pt-5 relative">
+        <Pills3D setLoading={setLoading} />
+        {loading ? (
+          <div className="h-48">
+            <Loader />
+          </div>
+        ) : (
+          <>
+            <HeroSection />
+          </>
+        )}
       </div>
     </main>
   );
