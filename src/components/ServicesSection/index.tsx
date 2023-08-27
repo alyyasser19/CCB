@@ -5,7 +5,7 @@ import "../../app/globals.css";
 
 function ServicesSection() {
   return (
-    <div className="services-container relative mt-12">
+    <div className="services-container relative">
       <div className="services-title">
         <h3>Services</h3>
       </div>

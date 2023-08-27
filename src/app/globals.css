@@ -67,6 +67,79 @@ body {
   line-height: normal;
 }
 
+.about-us-txt {
+  color: var(--display-colors-typography, #fff);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.about-us-container {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3.5625rem 2rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--display-colors-typography, #fff);
+  background-color: transparent;
+}
+.about-us-container ul {
+  @apply list-disc list-inside text-white text-sm;
+}
+
+.tabs {
+  position: absolute;
+  top: -1.7rem;
+  left: 10%;
+  width: 80%;
+  display: inline-flex;
+  border-radius: 0.625rem;
+  border: 1px solid var(--display-colors-typography, #fff);
+  background: var(--display-colors-background, #141817);
+  align-items: center;
+  gap: 2.25rem;
+  justify-content: space-between;
+}
+
+.tab {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.925rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  flex-wrap: nowrap;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tab:hover {
+  background-color: var(--display-colors-primary, #61ffd9);
+}
+
+.tab.active {
+  border-radius: 0.625rem;
+  background-image: var(
+    --gradient,
+    linear-gradient(88deg, #2fe38d 0%, #61ffd9 100%)
+  );
+  color: var(--display-colors-background, #000);
+}
+
+.tab.active:hover {
+  background-color: var(--display-colors-primary, #61ffd9);
+  color: var(--display-colors-background, #000);
+}
+
 @media only screen and (max-width: 800px) {
   .services-container {
     padding: 3rem 1rem;
@@ -77,5 +150,29 @@ body {
   }
   .services-title > h3 {
     font-size: 1.5rem;
+  }
+  .tab {
+    padding: 0.4rem 0.8rem;
+    font-size: 1.075rem;
+  }
+  .tabs {
+    top: -1.5rem;
+    left: 5%;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-us-txt {
+    font-size: 2.5rem;
+  }
+  .tab {
+    padding: 0.4rem 0.1rem;
+    font-size: 0.675rem;
+  }
+  .tabs {
+    top: -1rem;
+    left: 2.5%;
+    width: 95%;
   }
 }
