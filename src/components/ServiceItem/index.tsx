@@ -13,19 +13,9 @@ function ServiceItem({
   description,
   icon,
 }: ServiceItemProps): JSX.Element {
-  const [downSm, setDownSm] = React.useState(false);
-
-  React.useEffect(() => {
-    const handleResize = () => {
-      setDownSm(window.innerWidth < 800);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-  }, []);
 
   return (
-    <div className={`${downSm ? "w-full" : "w-1/5"}`}>
+    <div className={"w-full lg:w-1/5"}>
       <div className="flex flex-col">
         <div className="flex gap-3">
           <div className="flex-shrink-0">{icon}</div>

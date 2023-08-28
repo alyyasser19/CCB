@@ -22,6 +22,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ccb-gradient {
   background: var(--gradient, linear-gradient(88deg, #2fe38d 0%, #61ffd9 100%));
   background-clip: text;
@@ -232,6 +236,13 @@ body {
 
   .about-us-section {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .tab {
+    padding: 0.4rem 0.4rem;
+    font-size: 0.7rem;
   }
 }
 

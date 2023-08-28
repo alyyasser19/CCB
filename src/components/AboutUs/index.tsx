@@ -7,7 +7,7 @@ import { aboutUsSections } from "@/presets/aboutUsSections";
 function AboutUs() {
   const [selected, setSelected] = React.useState(0);
   return (
-    <div className="w-full">
+    <div id="About" className="w-full">
       <div className="relative w-full md:mt-10 mt-16 about-us">
         <Tabs
           tabs={[
