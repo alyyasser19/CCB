@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <div className="flex flex-col gap-10 w-full relative text-center p-2 rounded-md">
       <div
-        className={`${playfair.className} md:text-9xl font-semibold text-6xl`}
+        className={`${playfair.className} md:text-9xl font-semibold text-6xl sm:mt-0 mt-10`}
       >
         <h1 className="ccb-gradient">Comercial</h1>
         <h1>Consulting Bureau.</h1>
