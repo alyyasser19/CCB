@@ -1,5 +1,5 @@
 import React from "react";
-import { IoArrowForwardCircle, IoPlayForwardCircle } from "react-icons/io5";
+import { IoArrowForwardCircle } from "react-icons/io5";
 
 interface AboutUsSectionProps {
   title: string;
@@ -14,10 +14,10 @@ function AboutUsSection({
   images,
 }: AboutUsSectionProps) {
   return (
-    <div className="about-us-container">
+    <div className="about-us-section">
       <div className="w-3/5 flex flex-col gap-7 justify-between">
         <h5 className="text-2xl font-bold leading-normal">{title}</h5>
-        <p className="font-light leading-normal text-lg">{description}</p>
+        <p className="font-normal leading-8 text-xl">{description}</p>
         <a href="#Contact">
           <div className="flex flex-row gap-2">
             <button className="font-light leading-normal text-xl">

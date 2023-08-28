@@ -9,7 +9,7 @@ interface Props {
 
 function Index({ topText, bottomText, topSvg }: Props) {
   return (
-    <div className="flex flex-col items-center bg-green-700 bg-opacity-80 rounded-md p-5 h-36 w-36 justify-between">
+    <div className="flex flex-col items-center bg-green-700 bg-opacity-80 rounded-md p-5 h-36 md:w-36 justify-between w-5/6">
       {topSvg ? (
         topSvg
       ) : (
