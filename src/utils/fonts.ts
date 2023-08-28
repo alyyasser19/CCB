@@ -1,6 +1,6 @@
-import { Playfair, Lato } from "next/font/google";
+import { Playfair, Lato, Playfair_Display } from "next/font/google";
 
-export const playfair = Playfair({
+export const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 
