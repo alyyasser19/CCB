@@ -6,7 +6,7 @@ import AE from "../../assets/ae.svg";
 
 function index() {
   return (
-    <div className="flex flex-row justify-center gap-4 md:flex-row sm:flex-col">
+    <div className="flex flex-row justify-center gap-10 md:flex-row sm:flex-col">
       <StatBox topText={"40+"} bottomText={"Years of Experience"} />
       <StatBox topText={"20+"} bottomText={"Satisfied Client"} />
       <StatBox

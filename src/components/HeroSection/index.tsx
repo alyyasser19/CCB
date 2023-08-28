@@ -16,12 +16,8 @@ function HeroSection() {
         <span>Nourishing </span>
         <span className="font-black	ccb-gradient">Lives</span>
       </div>
-      <div className="text-lg w-3/5 self-center font-semibold text">
-        Experience unmatched pharmaceutical consulting, representation, and
-        marketing. Our services amplify market presence through regulatory
-        support, strategic campaigns, and holistic nutritional expertise.
-      </div>
       <StatsContainer />
+      <button className="btn-space w-3/4">Get In Touch </button>
     </div>
   );
 }
