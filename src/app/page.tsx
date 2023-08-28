@@ -1,6 +1,6 @@
 "use client";
 
-import AboutUs from "@/components/AboutUs";
+import ContactForm from "@/components/ContactForm";
 import HeroSection from "@/components/HeroSection";
 import Loader from "@/components/Loader";
 import Pills3D from "@/components/Pills3D";
@@ -19,9 +19,9 @@ export default function Home() {
         ) : (
           <> */}
             <HeroSection />
-            <AboutUs />
-          {/* </>
-        )} */}
+            <ContactForm />
+          </>
+        )}
       </div>
     </main>
   );

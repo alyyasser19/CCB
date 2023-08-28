@@ -19,6 +19,7 @@ function HeroSection() {
         <span className="font-black	ccb-gradient">Lives</span>
       </div>
       <StatsContainer />
+      <button className="btn-space w-3/4">Get In Touch </button>
     </div>
   );
 }
