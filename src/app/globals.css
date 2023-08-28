@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(#1f2c29, rgb(var(--background-end-rgb)))
+  background: linear-gradient(#141817, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
 }
 
@@ -77,17 +77,69 @@ body {
   line-height: normal;
 }
 
-.about-us-container {
+.about-us-section {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  padding: 3.5625rem 2rem;
+  padding: 5rem 2rem;
   border-radius: 1.25rem;
   border: 1px solid var(--display-colors-typography, #fff);
-  background-color: transparent;
+  background: linear-gradient(0deg, #000, #272727);
 }
-.about-us-container ul {
-  @apply list-disc list-inside text-white text-sm;
+
+.about-us {
+  border-radius: 1.25rem;
+  border: 1px solid var(--display-colors-typography, #fff);
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.about-us:before,
+.about-us:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 1.25rem;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.about-us:after {
+  filter: blur(10px);
+}
+
+.about-us-section ul {
+  @apply list-none list-inside text-white text-sm;
 }
 
 .tabs {
@@ -102,6 +154,7 @@ body {
   align-items: center;
   gap: 2.25rem;
   justify-content: space-between;
+  padding: 0.625rem 0.625rem;
 }
 
 .tab {
@@ -119,11 +172,12 @@ body {
   line-height: normal;
   text-align: center;
   flex-wrap: nowrap;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
 
 .tab:hover {
   background-color: var(--display-colors-primary, #61ffd9);
+  color: var(--display-colors-background, #000);
 }
 
 .tab.active {

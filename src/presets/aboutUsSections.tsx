@@ -65,8 +65,8 @@ export const aboutUsSections: aboutUsSection[] = [
     images: [
       <div key={0} className="flex gap-7">
         <Image key={0.1} src={EgyptFlag} alt="egypt-flag" className="w-full" />
-        <ul className="flex flex-col gap-1 text-sm w-full justify-center">
-          <li className="text-sm">
+        <ul className="flex flex-col gap-3 w-full  justify-center ">
+          <li className="text-sm font-normal leading-4">
             34 Elsayed Elmargany St., Ground Floor, Heliopolis, Cairo, Egypt
           </li>
           <li>1 Obour Buildings, Ground Floor App 5, Cairo, Egypt</li>
