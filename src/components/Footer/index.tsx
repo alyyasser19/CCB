@@ -31,19 +31,19 @@ function Footer() {
             Home
           </a>
           <a
-            href="#about"
+            href="#About"
             className="focus:outline-none focus:underline hover:text-green-300 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer"
           >
             About Us
           </a>
           <a
-            href="#services"
+            href="#Services"
             className="focus:outline-none focus:underline hover:text-green-300 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer"
           >
             Services
           </a>
           <a
-            href="#contact"
+            href="#Contact"
             className="focus:outline-none focus:underline hover:text-green-300 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer"
           >
             Contact Us

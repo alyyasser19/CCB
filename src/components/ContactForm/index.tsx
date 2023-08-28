@@ -42,7 +42,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="form-container">
+    <div id="Contact" className="form-container">
       <div className="form">
         <h5 className="heading">Get in touch</h5>
         <p className="my-2 text-md">

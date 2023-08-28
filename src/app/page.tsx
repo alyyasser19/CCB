@@ -14,7 +14,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   return (
     <main className="min-h-screen">
-      <div className="flex items-center flex-col justify-between lg:p-6 p-3 pt-5 relative gap-16">
+      <div className="flex items-center flex-col justify-between lg:p-6 p-3 pt-5 relative gap-20">
           <HeroSection />
           <AboutUs />
           <ServicesSection />
