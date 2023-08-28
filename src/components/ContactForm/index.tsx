@@ -1,7 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
+function sendEmail(
+  name: string,
+  email: string,
+  subject: string,
+  message: string
+) {
+  const mailtoLink = `mailto:Yasser.hegazy@c-c-b-egypt.com?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(message)}`;
+  window.location.href = mailtoLink;
+}
+
 function ContactForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubjectChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSubject(event.target.value);
+  };
+
+  const handleMessageChange = (
+    event: React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSendClick = () => {
+    sendEmail(name, email, subject, message);
+  };
+
   return (
     <div className="form-container">
       <div className="form">
@@ -16,18 +55,38 @@ function ContactForm() {
           possibilities. Our team is ready to assist you on your journey to
           success in the pharmaceutical and nutritional industries.
         </p>
-        <input placeholder="Name" type="text" className="input" />
-        <input placeholder="Email" id="mail" type="email" className="input" />
-        <input placeholder="Subject" id="mail" type="email" className="input" />
+        <input
+          placeholder="Name"
+          type="text"
+          className="input"
+          value={name}
+          onChange={handleNameChange}
+        />
+        <input
+          placeholder="Email"
+          type="email"
+          className="input"
+          value={email}
+          onChange={handleEmailChange}
+        />
+        <input
+          placeholder="Subject"
+          type="text"
+          className="input"
+          value={subject}
+          onChange={handleSubjectChange}
+        />
         <textarea
           placeholder="Inquiry"
-          id="message"
-          name="message"
           className="textarea"
           rows={6}
+          value={message}
+          onChange={handleMessageChange}
         ></textarea>
         <div className="button-container">
-          <button className="w-full btn-space">Send</button>
+          <button className="w-full btn-space" onClick={handleSendClick}>
+            Send
+          </button>
         </div>
       </div>
     </div>
