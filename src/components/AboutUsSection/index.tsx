@@ -15,10 +15,10 @@ function AboutUsSection({
 }: AboutUsSectionProps) {
   return (
     <div className="about-us-section">
-      <div className="w-3/5 flex flex-col gap-7 justify-between">
+      <div className="md:w-3/5 w-full flex flex-col gap-7 justify-between">
         <h5 className="text-2xl font-bold leading-normal">{title}</h5>
         <p className="font-normal leading-8 text-xl">{description}</p>
-        <a href="#Contact">
+        <a href="#Contact" className="md:self-start self-center">
           <div className="flex flex-row gap-2">
             <button className="font-light leading-normal text-xl">
               {buttonName}
@@ -33,7 +33,7 @@ function AboutUsSection({
         </a>
       </div>
 
-      <div className="w-4/12 flex flex-col gap-7 ">
+      <div className="md:w-4/12 w-full flex flex-col gap-7 md:mt-0 mt-5">
         {images.map((image, index) => (
           <div key={index}>{image}</div>
         ))}

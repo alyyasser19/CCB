@@ -8,7 +8,7 @@ function AboutUs() {
   const [selected, setSelected] = React.useState(0);
   return (
     <div className="w-full">
-      <div className="relative w-full mt-10 about-us">
+      <div className="relative w-full md:mt-10 mt-16 about-us">
         <Tabs
           tabs={[
             "Companies We Represent",

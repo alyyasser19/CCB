@@ -144,7 +144,7 @@ body {
 
 .tabs {
   position: absolute;
-  top: -1.7rem;
+  top: -2rem;
   left: 10%;
   width: 80%;
   display: inline-flex;
@@ -221,13 +221,17 @@ body {
     font-size: 2.5rem;
   }
   .tab {
-    padding: 0.4rem 0.1rem;
-    font-size: 0.675rem;
+    padding: 0.6rem 0.6rem;
+    font-size: 0.875rem;
   }
   .tabs {
-    top: -1rem;
+    top: -2.5rem;
     left: 2.5%;
     width: 95%;
+  }
+
+  .about-us-section {
+    flex-direction: column;
   }
 }
 

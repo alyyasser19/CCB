@@ -1,5 +1,6 @@
 "use client";
 
+import AboutUs from "@/components/AboutUs";
 import ContactForm from "@/components/ContactForm";
 import HeroSection from "@/components/HeroSection";
 import Loader from "@/components/Loader";
@@ -10,7 +11,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   return (
     <main className="min-h-screen">
-      <div className="flex items-center flex-col justify-between lg:p-6 sm:p-3 pt-5 relative">
+      <div className="flex items-center flex-col justify-between lg:p-6 p-3 pt-5 relative">
         {/* <Pills3D setLoading={setLoading} /> */}
         {/* {loading ? (
           <div className="h-48">
@@ -20,7 +21,7 @@ export default function Home() {
           <> */}
         <>
           <HeroSection />
-          <ContactForm />
+          <AboutUs />
         </>
         {/* )} */}
       </div>
