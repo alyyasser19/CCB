@@ -18,10 +18,11 @@ export default function Home() {
           </div>
         ) : (
           <> */}
-            <HeroSection />
-            <ContactForm />
-          </>
-        )}
+        <>
+          <HeroSection />
+          <ContactForm />
+        </>
+        {/* )} */}
       </div>
     </main>
   );
