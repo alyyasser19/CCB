@@ -235,8 +235,8 @@ body {
   }
 }
 
-.btn-space{
-  --bg: #61FFD9;
+.btn-space {
+  --bg: #61ffd9;
   --text-color: #000;
   position: relative;
   border: none;
@@ -253,34 +253,36 @@ body {
   align-self: center;
 }
 
-.btn-space:hover{
+.btn-space:hover {
   opacity: 1;
 }
 
-.btn-space:active{
+.btn-space:active {
   top: 4px;
-  box-shadow: #149174 0px 3px 2px,#000 0px 3px 5px;
+  box-shadow: #149174 0px 3px 2px, #000 0px 3px 5px;
 }
 
-.card-highlight{
-  background: #61FFD9;
+.card-highlight {
+  background: #61ffd9;
   padding: 1rem;
   border-radius: 1rem;
-  border: .5vmin solid #05060f;
-  box-shadow: .4rem .4rem #05060f;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
   overflow: hidden;
   color: black;
   transition: 0.2s ease-in-out all;
 }
 
-.card-highlight:hover{
-  background: #61FFD9;
+.card-highlight:hover {
+  background: #61ffd9;
   padding: 1rem;
   border-radius: 1rem;
-  border: .3vmin solid #05060f;
-  box-shadow: .6rem .6rem #05060f;
+  border: 0.3vmin solid #05060f;
+  box-shadow: 0.6rem 0.6rem #05060f;
   overflow: hidden;
   color: black;
 }
 
-
+.ccb-green {
+  background: #61ffd9;
+}
