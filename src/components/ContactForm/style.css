@@ -5,7 +5,6 @@
 .form-container {
   max-width: 100%;
   margin: 30px;
-  background-color: #001925;
   padding: 30px;
   border-left: 5px solid #61ffd9;
   clip-path: polygon(
@@ -16,6 +15,7 @@
     0 100%
   );
   border-radius: 2%;
+  background: linear-gradient(0deg, #000, #272727);
 }
 
 .heading {

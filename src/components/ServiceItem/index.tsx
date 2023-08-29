@@ -20,10 +20,10 @@ function ServiceItem({
         <div className="flex gap-3">
           <div className="flex-shrink-0">{icon}</div>
           <div className="flex flex-col gap-1">
-            <div className="text-xl text-white font-bold leading-normal not-italic">
+            <div className="text-2xl text-white font-bold leading-normal not-italic">
               {title}
             </div>
-            <div className="text-xs font-normal leading-normal not-italic text-d2d2d2">
+            <div className="text-md font-normal leading-normal not-italic text-d2d2d2">
               {description}
             </div>
           </div>
