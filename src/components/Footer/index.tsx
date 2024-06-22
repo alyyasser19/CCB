@@ -25,7 +25,7 @@ function Footer() {
             Quick Links
           </h2>
           <a
-            href="#"
+            href="/"
             className="focus:outline-none focus:underline hover:text-green-300 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer"
           >
             Home
