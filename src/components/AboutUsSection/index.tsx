@@ -20,7 +20,7 @@ function AboutUsSection({
         <p className="font-normal leading-8 text-xl">{description}</p>
         <a href="#Contact" className="md:self-start self-center">
           <div className="flex flex-row gap-2">
-            <button className="font-light leading-normal text-xl">
+            <button type="button" className="font-light leading-normal text-xl">
               {buttonName}
             </button>
             <IoArrowForwardCircle

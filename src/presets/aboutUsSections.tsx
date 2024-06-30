@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NewEdgeLogo from "../assets/new-edge-logo.svg";
+import Qilu from "../assets/quil.png";
 import FreseniusLogo from "../assets/fresenius-logo.svg";
 import IndiaFlag from "../assets/india-flag.svg";
 import ChinaFlag from "../assets/china-flag.svg";
@@ -19,19 +19,19 @@ export const aboutUsSections: aboutUsSection[] = [
   {
     title: "Companies We Represent:",
     description:
-      "Our portfolio includes esteemed partners like Fresenius Kabi Austria, Fresenius Kabi Anti-Infective Italy, New Edge Overseas India, and Henan Kangada China. These collaborations embody our dedication to delivering innovative pharmaceutical solutions from around the world.",
+      "Our portfolio includes esteemed partners like Fresenius Kabi Austria, Fresenius Kabi Anti-Infective Italy,   Qilu Pharmaceutical, New Edge Overseas India, and Henan Kangada China. These collaborations embody our dedication to delivering innovative pharmaceutical solutions from around the world.",
     buttonName: "Join Us",
     images: [
       <Image
         key={0}
-        src={NewEdgeLogo}
-        alt="new-edge-logo"
+        src={Qilu}
+        alt="Qilu-logo"
         className="w-full"
       />,
       <Image
         key={1}
         src={FreseniusLogo}
-        alt="new-edge-overseas"
+        alt="Fresenius-overseas"
         className="w-full"
       />,
     ],

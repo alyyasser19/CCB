@@ -10,7 +10,8 @@ function Tabs({ tabs, selected, setSelected }: TabsProps) {
     <div className="tabs">
       {tabs.map((tab, index) => (
         <button
-          key={index}
+          key={tab}
+          type="button"
           onClick={() => setSelected(index)}
           className={`${selected === index ? "tab active" : "tab"}`}
         >

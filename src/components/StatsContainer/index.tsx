@@ -8,7 +8,7 @@ function index() {
   return (
     <div className="flex justify-center items-center gap-4 md:flex-row flex-col">
       <StatBox topText={"40+"} bottomText={"Years of Experience"} />
-      <StatBox topText={"20+"} bottomText={"Satisfied Client"} />
+      <StatBox topText={"100+"} bottomText={"Satisfied Client"} />
       <StatBox
         topText={undefined}
         bottomText={"Heliopolis"}

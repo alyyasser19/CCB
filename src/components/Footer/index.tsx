@@ -14,7 +14,7 @@ function Footer() {
             <span className="font-black	ccb-gradient">Nutrition</span>
           </div>
           <p className="text-sm leading-none text-gray-800 mt-4 dark:text-white">
-            Copyright © 2023 CCB
+            Copyright © 2024 CCB
           </p>
           <p className="text-sm leading-none text-gray-800 mt-4 dark:text-white">
             All rights reserved
@@ -77,6 +77,14 @@ function Footer() {
             </p>
             <p className="text-sm leading-none text-gray-800 dark:text-white">
               Shams, UAE
+            </p>
+          </div>
+          <div className="space-y-2 gap-3 flex flex-col">
+            <p className="text-lg leading-none text-gray-800 dark:text-white">
+              India Office:
+            </p>
+            <p className="text-sm leading-none text-gray-800 dark:text-white">
+              Hyderabad, Telangana
             </p>
           </div>
         </div>

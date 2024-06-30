@@ -5,17 +5,19 @@ import { lato } from "@/utils/fonts";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "CCB - Comercial Consuling Bureau",
-  description: "CCB - Comercial Consuling Bureau EGYPT UAE - Pharmaceutical and Nutrition Consulting",
-  abstract: "The official Website for CCB - Comercial Consuling Bureau EGYPT UAE",
-  authors: [{name: "Yasser Hegazy"}, {name: "Aly Hegazy"}],
+  title: "CCB - Commercial Consulting Bureau",
+  description:
+    "CCB - Commercial Consulting Bureau EGYPT UAE - Pharmaceutical and Nutrition Consulting",
+  abstract:
+    "The official Website for CCB - Commercial Consulting Bureau EGYPT UAE",
+  authors: [{ name: "Yasser Hegazy" }, { name: "Aly Hegazy" }],
   keywords: [
     "CCB",
-    "Comercial Consuling Bureau",
+    "Commercial Consulting Bureau",
     "CCB Egypt",
     "CCB UAE",
     "CCB Egypt UAE",
-    "Comercial",
+    "Commercial",
     "Consulting",
     "Bureau",
     "Pharmaceutical",
@@ -52,11 +54,27 @@ export const metadata: Metadata = {
     "Machine learning",
     "Blockchain",
   ],
-  icons:{
+  icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-  }
-  
+  },
+  openGraph: {
+    title: "CCB - Commercial Consulting Bureau",
+    description:
+      "CCB - Commercial Consulting Bureau EGYPT UAE - Pharmaceutical and Nutrition Consulting",
+    emails: ["Yasser.hegazy@c-c-b-egypt.com"],
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "/assets/CCB.png",
+        width: 800,
+        height: 600,
+        alt: "CCB Logo",
+        type: 'image/png'
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

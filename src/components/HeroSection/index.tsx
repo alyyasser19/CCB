@@ -8,7 +8,7 @@ function HeroSection() {
       <div
         className={`${playfair.className} md:text-9xl font-semibold text-6xl sm:mt-0 mt-10`}
       >
-        <h1 className="ccb-gradient">Comercial</h1>
+        <h1 className="ccb-gradient">Commercial</h1>
         <h1>Consulting Bureau.</h1>
       </div>
       <div className="md:text-4xl text-3xl">
@@ -20,7 +20,7 @@ function HeroSection() {
       </div>
       <StatsContainer />
       <a href="#Contact">
-        <button className="btn-space w-3/4">Get In Touch </button>
+        <button type="button" className="btn-space w-3/4">Get In Touch </button>
       </a>
     </div>
   );

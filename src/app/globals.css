@@ -131,7 +131,7 @@ html {
   border: 1px solid var(--display-colors-typography, #fff);
   background: var(--display-colors-background, #141817);
   align-items: center;
-  gap: 2.25rem;
+  gap: 1.25rem;
   justify-content: space-between;
   padding: 0.625rem 0.625rem;
 }
